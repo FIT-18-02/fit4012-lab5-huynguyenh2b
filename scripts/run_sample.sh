@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-make all
+g++ -std=c++17 -Wall -Wextra -pedantic encrypt.cpp -o encrypt
+g++ -std=c++17 -Wall -Wextra -pedantic decrypt.cpp -o decrypt
 
 PLAINTEXT="hello FIT4012 AES"
 
